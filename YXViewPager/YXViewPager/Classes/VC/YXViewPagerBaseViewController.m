@@ -84,8 +84,9 @@
         _topView.itemWidth = _itemWidth;
     }
     [_topView renderUIWithArray:_dataArray];
+    __weak typeof(self) weakSelf = self;
     [_topView addItemClickBlock:^(NSInteger tag) {
-        [self tabItemSelected:tag];
+        [weakSelf tabItemSelected:tag];
     }];
     [self.view addSubview:_topView];
 }

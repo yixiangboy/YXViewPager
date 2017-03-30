@@ -68,8 +68,8 @@
         
         __weak typeof(self) weakSelf = self;
         [itemView addSelectedCallBack:^(NSInteger tag) {
-            if (_itemClickBlock) {
-                _itemClickBlock(tag);
+            if (weakSelf.itemClickBlock) {
+                weakSelf.itemClickBlock(tag);
             }
         }];
     }
