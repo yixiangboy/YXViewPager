@@ -1,0 +1,6 @@
+framework module YXViewPager {
+  umbrella header "YXViewPager-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,6 @@
+framework module Pods_YXViewPager_Tests {
+  umbrella header "Pods-YXViewPager_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

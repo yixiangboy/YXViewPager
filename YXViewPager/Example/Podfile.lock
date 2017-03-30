@@ -1,0 +1,16 @@
+PODS:
+  - YXViewPager (0.1.0)
+
+DEPENDENCIES:
+  - YXViewPager (from `../`)
+
+EXTERNAL SOURCES:
+  YXViewPager:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YXViewPager: eee2a54aabf723baa59b7ba345babd27b1bb80ae
+
+PODFILE CHECKSUM: cacf4d91ef9562d8985dd79bb7ae8fa5a269e81f
+
+COCOAPODS: 1.1.1

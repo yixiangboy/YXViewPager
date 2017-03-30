@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'YXViewPager_Example' do
+  pod 'YXViewPager', :path => '../'
+
+  target 'YXViewPager_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

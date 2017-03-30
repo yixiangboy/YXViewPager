@@ -1,0 +1,22 @@
+{
+  "name": "YXViewPager",
+  "version": "0.1.0",
+  "summary": "A short description of YXViewPager.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/yixiangboy/YXViewPager",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "yixiangboy": "yixiang.yx@alibaba-inc.com"
+  },
+  "source": {
+    "git": "https://github.com/yixiangboy/YXViewPager.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "YXViewPager/Classes/**/*"
+}
