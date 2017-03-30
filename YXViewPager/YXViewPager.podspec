@@ -30,7 +30,7 @@ iOS中模仿android实现的ViewPager
 
   s.ios.deployment_target = '7.0'
 
-  s.source_files = 'YXViewPager/Classes/**/*'
+  s.source_files = 'YXViewPager/YXViewPager/Classes/**/*'
   
   # s.resource_bundles = {
   #   'YXViewPager' => ['YXViewPager/Assets/*.png']
