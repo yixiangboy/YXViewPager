@@ -21,6 +21,10 @@
     [self renderUI];
 }
 
+- (void)dealloc{
+    
+}
+
 - (NSDictionary *)getPageConfigInfo{
     NSDictionary *configInfo = @{
                                         @"topViewBgColor":@"282B31",

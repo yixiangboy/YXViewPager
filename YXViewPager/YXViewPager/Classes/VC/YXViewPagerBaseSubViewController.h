@@ -20,6 +20,6 @@
 @property (nonatomic, weak) id<YXViewPagerEventDelegate> delegate;
 
 //在SubVC类中获取rootVc，主要用于跳转
-@property (nonatomic, strong) UIViewController *rootVc;
+@property (nonatomic, weak) UIViewController *rootVc;
 
 @end
