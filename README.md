@@ -1,21 +1,21 @@
-#开源啦，一个iOS中完全解耦的ViewPager实现。
+# 开源啦，一个iOS中完全解耦的ViewPager实现。
 
-##一、简述
+## 一、简述
 现在的App也来越关注用户的体验，如果你们需求是做一个让别人轻松逛一逛的界面的话，像这种可以左右滑动切换Tab的多界面交互效果是非常适合的，不需要用户过多的点击，左右滑动的交互效果让体验更加良好。比如手淘首页中“淘抢购”，“有好货”，“男神范”，“必买清单”都是这种交互方式。我们飞猪在做出境超市首页Native化的时候，也是采取这种交互方式，项目也顺利完成，在交互效果上大家评价都还不错，我花了一点时间，去掉了一些业务代码，对代码重构了一下，提取出了可以开源的部分代码，供大家做一个参考。[项目地址](https://github.com/yixiangboy/YXViewPager)。
-##二、效果展示
-###1.1：图片+文字切换效果
+## 二、效果展示
+### 1.1：图片+文字切换效果
 ![](http://i1.piimg.com/567571/7f2dcaeaeebfb646.gif)
-###1.2：单独文字切换效果
+### 1.2：单独文字切换效果
 ![](http://i2.muimg.com/567571/3f718862163dff08.gif)
-###1.3：单独图片切换效果
+### 1.3：单独图片切换效果
 ![](http://i4.buimg.com/567571/48a3a5842683d6c9.gif)
-###1.4：图片+文字选中切换效果
+### 1.4：图片+文字选中切换效果
 ![](http://i2.muimg.com/567571/51199717a5f07651.gif)
-###1.5：超过一屏时候的切换效果
+### 1.5：超过一屏时候的切换效果
 ![](http://i4.buimg.com/567571/ced57d8f20a3a541.gif)
 
-##三、如何使用
-###2.1：源码引入
+## 三、如何使用
+### 2.1：源码引入
 去github下载源码，获取YXViewpager/YXViewPager/Classes/*目录下的所有文件拷贝到自己的工程目录中。
 目录结构如下：
 
@@ -53,15 +53,15 @@ VC：这两个类是我们业务线需要继承的。主框架ViewController需�
 
 View:一些自定义View
 
-###2.2：cocoapods引入
+### 2.2：cocoapods引入
 pod 'YXViewPager', '~> 0.0.1'
-###2.3：使用方式
+### 2.3：使用方式
 具体你可以下载github项目中的Example目录，提供了Demo，使用方式非常简单。
 这边拿"超过一屏时候的切换效果"作为例子，讲解一下使用这个框架该如何使用。
 
 ![](http://i4.buimg.com/567571/ced57d8f20a3a541.gif)
 
-####第一步：新建一个ViewController继承于YXViewPagerBaseViewController。
+#### 第一步：新建一个ViewController继承于YXViewPagerBaseViewController。
 取名为YXViewPagerDemo4ViewController。
 
 ```
@@ -187,7 +187,7 @@ vcName           : 该item绑定ViewController实例名称。
 
 配置项可以本地写死，也可以通过服务端动态下发。需要渲染的时候，可用手动调用[self renderUI];即可。
 
-####第二步：新建每一个Item项目里面vcName对应的ViewController实例，该实例需要继承于YXViewPagerBaseSubViewController。
+#### 第二步：新建每一个Item项目里面vcName对应的ViewController实例，该实例需要继承于YXViewPagerBaseSubViewController。
 该基类主要提供了RootVc与SubVc之间的通信机制。
 
 ```
