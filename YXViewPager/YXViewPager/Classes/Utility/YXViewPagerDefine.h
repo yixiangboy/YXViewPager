@@ -16,4 +16,8 @@
 #define DICTIONARY_IS_EMPTY(dic) ((dic)==nil || ![(dic) isKindOfClass:[NSDictionary class]] || (dic).count < 1)
 #define ARRAY_IS_EMPTY(array) ((array)==nil || ![(array) isKindOfClass:[NSArray class]] || (array).count < 1)
 
+#define SCREEN_WIDTH    [[UIScreen mainScreen] bounds].size.width
+#define SCREEN_HEIGHT    [[UIScreen mainScreen] bounds].size.height
+#define STATUSBAR_HEIGHT                     [UIApplication sharedApplication].statusBarFrame.size.height
+
 #endif /* YXViewPagerDefine_h */

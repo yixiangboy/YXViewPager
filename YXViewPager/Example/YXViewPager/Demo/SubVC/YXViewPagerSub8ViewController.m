@@ -62,5 +62,9 @@
     NSLog(@"Sub1 viewDidDisappear");
 }
 
+- (void)dealloc{
+    
+}
+
 
 @end

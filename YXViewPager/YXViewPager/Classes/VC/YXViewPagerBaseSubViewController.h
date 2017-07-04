@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "YXViewPagerEventDelegate.h"
+#import "YXViewPagerSubVcScrollDelegate.h"
+@class YXViewPagerBaseViewController;
 
 @interface YXViewPagerBaseSubViewController : UIViewController
 
@@ -20,6 +22,11 @@
 @property (nonatomic, weak) id<YXViewPagerEventDelegate> delegate;
 
 //在SubVC类中获取rootVc，主要用于跳转
-@property (nonatomic, weak) UIViewController *rootVc;
+@property (nonatomic, weak) YXViewPagerBaseViewController *rootVc;
+
+//SubVC的滚动事件，传递给RootVc的代理
+@property (nonatomic, weak) id<YXViewPagerSubVcScrollDelegate> scrollDelegate;
+
+@property (nonatomic, strong) UITableView *tableView;
 
 @end

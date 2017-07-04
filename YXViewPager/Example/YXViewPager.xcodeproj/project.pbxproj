@@ -42,6 +42,7 @@
 		DA20C6E31E8BEB0300541112 /* YXViewPagerSub8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA20C6E21E8BEB0300541112 /* YXViewPagerSub8ViewController.m */; };
 		DA2954311E8CB90700DE9280 /* YXViewPagerSubCell0.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2954301E8CB90700DE9280 /* YXViewPagerSubCell0.m */; };
 		DA2954341E8CB91900DE9280 /* YXViewPagerSubCell1.m in Sources */ = {isa = PBXBuildFile; fileRef = DA2954331E8CB91900DE9280 /* YXViewPagerSubCell1.m */; };
+		DAE4B9CA1F0B812700117E44 /* YXViewPagerDemo8ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE4B9C91F0B812700117E44 /* YXViewPagerDemo8ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,8 @@
 		DA2954301E8CB90700DE9280 /* YXViewPagerSubCell0.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXViewPagerSubCell0.m; sourceTree = "<group>"; };
 		DA2954321E8CB91900DE9280 /* YXViewPagerSubCell1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXViewPagerSubCell1.h; sourceTree = "<group>"; };
 		DA2954331E8CB91900DE9280 /* YXViewPagerSubCell1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXViewPagerSubCell1.m; sourceTree = "<group>"; };
+		DAE4B9C81F0B812700117E44 /* YXViewPagerDemo8ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXViewPagerDemo8ViewController.h; sourceTree = "<group>"; };
+		DAE4B9C91F0B812700117E44 /* YXViewPagerDemo8ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXViewPagerDemo8ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +272,8 @@
 				DA20C6C31E8BE9D700541112 /* YXViewPagerDemo6ViewController.m */,
 				DA20C6C51E8BE9E400541112 /* YXViewPagerDemo7ViewController.h */,
 				DA20C6C61E8BE9E400541112 /* YXViewPagerDemo7ViewController.m */,
+				DAE4B9C81F0B812700117E44 /* YXViewPagerDemo8ViewController.h */,
+				DAE4B9C91F0B812700117E44 /* YXViewPagerDemo8ViewController.m */,
 			);
 			path = Demo;
 			sourceTree = "<group>";
@@ -364,6 +369,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = yixiangboy;
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = 2M632FEG3H;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -526,6 +534,7 @@
 				DA20C6E31E8BEB0300541112 /* YXViewPagerSub8ViewController.m in Sources */,
 				DA20C6B81E8BE9A600541112 /* YXViewPagerDemo2ViewController.m in Sources */,
 				DA20C6C41E8BE9D700541112 /* YXViewPagerDemo6ViewController.m in Sources */,
+				DAE4B9CA1F0B812700117E44 /* YXViewPagerDemo8ViewController.m in Sources */,
 				DA2954311E8CB90700DE9280 /* YXViewPagerSubCell0.m in Sources */,
 				DA20C6C11E8BE9CB00541112 /* YXViewPagerDemo5ViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -656,11 +665,12 @@
 			baseConfigurationReference = 40C5F57238095F6412AF2CC2 /* Pods-YXViewPager_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2M632FEG3H;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YXViewPager/YXViewPager-Prefix.pch";
 				INFOPLIST_FILE = "YXViewPager/YXViewPager-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = yxiang.YXViewPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -671,11 +681,12 @@
 			baseConfigurationReference = 904BE4B751DBE3E5ED080064 /* Pods-YXViewPager_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2M632FEG3H;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "YXViewPager/YXViewPager-Prefix.pch";
 				INFOPLIST_FILE = "YXViewPager/YXViewPager-Info.plist";
 				MODULE_NAME = ExampleApp;
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_BUNDLE_IDENTIFIER = yxiang.YXViewPage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

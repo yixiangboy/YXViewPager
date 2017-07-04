@@ -83,5 +83,31 @@
     self.frame = newframe;
 }
 
+- (CGPoint) origin
+{
+    return self.frame.origin;
+}
+
+- (void) setOrigin: (CGPoint) aPoint
+{
+    CGRect newframe = self.frame;
+    newframe.origin = aPoint;
+    self.frame = newframe;
+}
+
+
+// Retrieve and set the size
+- (CGSize) size
+{
+    return self.frame.size;
+}
+
+- (void) setSize: (CGSize) aSize
+{
+    CGRect newframe = self.frame;
+    newframe.size = aSize;
+    self.frame = newframe;
+}
+
 
 @end

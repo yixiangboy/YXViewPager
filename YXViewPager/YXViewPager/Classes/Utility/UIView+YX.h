@@ -19,4 +19,7 @@
 @property CGFloat bottom;
 @property CGFloat right;
 
+@property CGPoint origin;
+@property CGSize size;
+
 @end

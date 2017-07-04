@@ -12,5 +12,9 @@
 #import "YXViewPagerDefine.h"
 #import "UIView+YX.h"
 #import "UIColor+YX.h"
+#import "UIImage+YX.h"
+#import "UIImageView+YX.h"
+
+#define YXViewPagerHeight 51
 
 #endif /* YXViewPagerUtility_h */

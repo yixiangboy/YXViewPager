@@ -76,18 +76,18 @@ static NSString *const kSelectIconName = @"ic_element_tabbar_home_pressed";
             break;
         case YXViewPagerItemViewTypeForImage:
             if (select) {
-                [self settingIconName:_viewModel.selectIconName];
+                [self settingIconType:_viewModel.imageType iconName:_viewModel.selectIconName selected:YES];
             }else{
-                [self settingIconName:_viewModel.normalIconName];
+                [self settingIconType:_viewModel.imageType iconName:_viewModel.normalIconName selected:NO];
             }
             break;
         case YXViewPagerItemViewTypeForTextAndImage:
             if (select) {
                 [self settingTitleColor:_viewModel.selectTitleColor];
-                [self settingIconName:_viewModel.selectIconName];
+                [self settingIconType:_viewModel.imageType iconName:_viewModel.selectIconName selected:YES];
             }else{
                 [self settingTitleColor:_viewModel.normalTitleColor];
-                [self settingIconName:_viewModel.normalIconName];
+                [self settingIconType:_viewModel.imageType iconName:_viewModel.normalIconName selected:NO];
             }
             break;
         default:
@@ -102,16 +102,16 @@ static NSString *const kSelectIconName = @"ic_element_tabbar_home_pressed";
 }
 
 - (void)renderImageType:(YXViewPagerItemViewModel *)viewModel{
-    rm(_iconView, self.width/2-kIconSize/2, self.height/2-kIconSize/2, kIconSize, kIconSize);
-    [self settingIconName:viewModel.normalIconName];
+    _iconView.frame = CGRectMake(self.width/2-kIconSize/2, self.height/2-kIconSize/2, kIconSize, kIconSize);
+    [self settingIconType:viewModel.imageType iconName:viewModel.normalIconName selected:NO];
 }
 
 
 - (void)renderTextAndImageType:(YXViewPagerItemViewModel *)viewModel{
-    rm(_iconView, self.width/2-kIconSize/2, 9.5, kIconSize, kIconSize);
-    [self settingIconName:viewModel.normalIconName];
+    _iconView.frame = CGRectMake(self.width/2-kIconSize/2, 5., kIconSize, kIconSize);
+    [self settingIconType:viewModel.imageType iconName:viewModel.normalIconName selected:NO];
     
-    rm(_titleLabel, 0, self.height-9.5-kTitleSize, self.width, kTitleSize);
+    _titleLabel.frame = CGRectMake(0, self.height-9.5-kTitleSize, self.width, kTitleSize);
     _titleLabel.text = viewModel.title;
     [self settingTitleColor:viewModel.normalTitleColor];
 }
@@ -122,11 +122,40 @@ static NSString *const kSelectIconName = @"ic_element_tabbar_home_pressed";
  
  @param iconName
  */
-- (void)settingIconName:(NSString *)iconName{
-    if (STRING_IS_BLANK(iconName)) {
-        _iconView.image = [UIImage imageNamed:kNormalIconName];
-    }else{
-        _iconView.image = [UIImage imageNamed:iconName];
+- (void)settingIconType:(TRIPYXViewPagerItemImageType)imageType iconName:(NSString *)iconName selected:(BOOL)selected{
+    if (imageType == YXViewPagerItemImageTypeForLocal) {
+        if (STRING_IS_BLANK(iconName)) {
+            _iconView.image = [UIImage imageLoader:kNormalIconName];
+        }else{
+            _iconView.image = [UIImage imageLoader:iconName];
+        }
+    }else if(imageType == YXViewPagerItemImageTypeForUrl){
+        if (!STRING_IS_BLANK(iconName)) {
+            [self setImageFromUrlWithIconUrl:iconName selected:selected];
+        }else{
+            if (selected) {
+                _iconView.image = [UIImage imageLoader:@"trip_viewpager_item_selected"];
+            }else{
+                _iconView.image = [UIImage imageLoader:@"trip_viewpager_item_unselected"];
+            }
+        }
+    }
+}
+
+//没有网络的情况下，需要默认图。使用placeholder会有闪动感觉
+- (void)setImageFromUrlWithIconUrl: (NSString *)iconUrl selected : (BOOL)selected{
+    NSURL *iconURL = [NSURL URLWithString:iconUrl];
+    if (iconURL) {
+        __weak typeof(self) weakSelf = self;
+        [_iconView setImageWithURL:[NSURL URLWithString:iconUrl] completed:^(UIImage *image, NSError *error) {
+            if (error) {
+                if (selected) {
+                    weakSelf.iconView.image = [UIImage imageLoader:@"trip_viewpager_item_selected"];
+                }else{
+                    weakSelf.iconView.image = [UIImage imageLoader:@"trip_viewpager_item_unselected"];
+                }
+            }
+        }];
     }
 }
 
@@ -155,3 +184,4 @@ static NSString *const kSelectIconName = @"ic_element_tabbar_home_pressed";
 }
 
 @end
+

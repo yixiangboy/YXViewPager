@@ -18,13 +18,15 @@
     [super viewDidLoad];
     self.title = @"只有图片";
     [self renderUI];
+    [self tabItemSelected:0 needAnimation:NO];
 }
 
 - (NSDictionary *)getPageConfigInfo{
     NSDictionary *configInfo = @{
-                                        @"topViewBgColor":@"282B31",
-                                        @"maskColor":@"#269FE7",
-                                        @"dataArray":@[@{
+                                     @"topViewBgColor":@"#282B31",
+                                     @"maskColor":@"#269FE7",
+                                     @"type":@0,
+                                     @"items":@[@{
                                                            @"itemType":@1,
                                                            @"normalIconName":@"icon_0_normal",
                                                            @"selectIconName":@"icon_0_normal",

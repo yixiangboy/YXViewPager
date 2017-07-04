@@ -22,6 +22,7 @@
                            @"rootInfo":@"我是RootVC传递过来的参数"
                            };
     [self renderUI];
+    [self tabItemSelected:0 needAnimation:NO];
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -50,11 +51,12 @@
 
 - (NSDictionary *)getPageConfigInfo{
     NSDictionary *configInfo = @{
-                                        @"topViewBgColor":@"#FFFFFF",
-                                        @"maskColor":@"#FEEDB1",
-                                        @"type":@1,
-                                        @"itemWidth":@60,
-                                        @"dataArray":@[@{
+                                     @"topViewBgColor":@"#FFFFFF",
+                                     @"maskColor":@"#FEEDB1",
+                                     @"type":@1,
+                                     @"itemWidth":@60,
+                                     @"maskWidth":@60,
+                                     @"items":@[@{
                                                            @"itemType":@2,
                                                            @"title":@"推荐",
                                                            @"normalTitleColor":@"#666666",

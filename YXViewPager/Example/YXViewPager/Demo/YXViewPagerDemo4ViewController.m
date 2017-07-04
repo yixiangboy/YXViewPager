@@ -18,13 +18,15 @@
     [super viewDidLoad];
     self.title = @"图片+文字选中切换";
     [self renderUI];
+    [self tabItemSelected:0 needAnimation:NO];
 }
 
 - (NSDictionary *)getPageConfigInfo{
     NSDictionary *configInfo = @{
                                         @"topViewBgColor":@"#FFFFFF",
                                         @"maskColor":@"#FEEDB1",
-                                        @"dataArray":@[@{
+                                        @"type":@0,
+                                        @"items":@[@{
                                                            @"itemType":@2,
                                                            @"title":@"推荐",
                                                            @"normalTitleColor":@"#666666",

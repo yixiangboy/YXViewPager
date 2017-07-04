@@ -18,10 +18,8 @@
 		3D20A68A4B484460A900C86FFCD36684 /* YXViewPagerTopItemView.h in Headers */ = {isa = PBXBuildFile; fileRef = D5CDE47E90B25F50185692DA5971A7FB /* YXViewPagerTopItemView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		435FE7A79C1E5DCF9F4BF198C1E19FE5 /* Pods-YXViewPager_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C441E46CC34412EC33C3346AB5695E /* Pods-YXViewPager_Tests-dummy.m */; };
 		4AD605DDB597D410A8A86016DD001458 /* UIColor+YX.h in Headers */ = {isa = PBXBuildFile; fileRef = 053B72058698A83FBA4F89E8A7C53546 /* UIColor+YX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4BD31D0DCF58D984C9DD879522D8E417 /* YXViewPagerItemViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 84E7A676178A2A5B4CDE79C728A10424 /* YXViewPagerItemViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5AB27470C0083FD069E8AD869B262F7E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		62DB9056666298243EE0898AB81650D1 /* UIColor+YX.m in Sources */ = {isa = PBXBuildFile; fileRef = 4740E68AED2C3B3A205A3F193881A46F /* UIColor+YX.m */; };
-		644485C7D8467202BE072F09FD2E62A6 /* YXViewPagerItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3A295D383B9CB260B9E1B38B031A83 /* YXViewPagerItemViewModel.m */; };
 		687B56C2C6FA124CD2B7A3755DA0D677 /* YXViewPagerTopItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CFFA74FCB2C069D757EC01B2EEFEC49 /* YXViewPagerTopItemView.m */; };
 		6938AF6132A3AEC4BABD3CC287537DF0 /* Pods-YXViewPager_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FAA8A3C10588F70068A8298F3E035AAF /* Pods-YXViewPager_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E48519F4627A0B6829859EB43988A45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
@@ -34,6 +32,30 @@
 		C2A2D35A5B58089A38863EC8854CFE26 /* YXViewPagerEventDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 8065F020806B28585E0920860887D762 /* YXViewPagerEventDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CB8080E368724299AF9E8CE16EC191FC /* YXViewPagerDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BE06E1A1434F6EF8211B690987ACBEA /* YXViewPagerDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8533A4CFB6E9F49A97E487628549454 /* YXViewPager.h in Headers */ = {isa = PBXBuildFile; fileRef = AE1B296B305678F4FEEF291050F84FB3 /* YXViewPager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAE4B9A31F0B3E3A00117E44 /* YXViewPagerSubVcScrollDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE4B9A21F0B3E3A00117E44 /* YXViewPagerSubVcScrollDelegate.h */; };
+		DAE4B9A91F0B3FEC00117E44 /* YXViewPagerConfigItemModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE4B9A71F0B3FEC00117E44 /* YXViewPagerConfigItemModel.h */; };
+		DAE4B9AA1F0B3FEC00117E44 /* YXViewPagerConfigItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE4B9A81F0B3FEC00117E44 /* YXViewPagerConfigItemModel.m */; };
+		DAE4B9AD1F0B402C00117E44 /* YXViewPagerConfigModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE4B9AB1F0B402C00117E44 /* YXViewPagerConfigModel.h */; };
+		DAE4B9AE1F0B402C00117E44 /* YXViewPagerConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE4B9AC1F0B402C00117E44 /* YXViewPagerConfigModel.m */; };
+		DAE4B9AF1F0B413500117E44 /* YXViewPagerItemViewModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE4B9A51F0B3F7F00117E44 /* YXViewPagerItemViewModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAE4B9B01F0B413500117E44 /* YXViewPagerConfigItemModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE4B9A71F0B3FEC00117E44 /* YXViewPagerConfigItemModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAE4B9B11F0B413500117E44 /* YXViewPagerConfigModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE4B9AB1F0B402C00117E44 /* YXViewPagerConfigModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAE4B9B21F0B414A00117E44 /* YXViewPagerItemViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE4B9A61F0B3F7F00117E44 /* YXViewPagerItemViewModel.m */; };
+		DAE4B9B31F0B414A00117E44 /* YXViewPagerConfigItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE4B9A81F0B3FEC00117E44 /* YXViewPagerConfigItemModel.m */; };
+		DAE4B9B41F0B414A00117E44 /* YXViewPagerConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE4B9AC1F0B402C00117E44 /* YXViewPagerConfigModel.m */; };
+		DAE4B9B51F0B423800117E44 /* YXViewPagerSubVcScrollDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE4B9A21F0B3E3A00117E44 /* YXViewPagerSubVcScrollDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAE4B9B81F0B43A400117E44 /* YXViewPagerScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE4B9B61F0B43A400117E44 /* YXViewPagerScrollView.h */; };
+		DAE4B9B91F0B43A400117E44 /* YXViewPagerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE4B9B71F0B43A400117E44 /* YXViewPagerScrollView.m */; };
+		DAE4B9BC1F0B479700117E44 /* UIImage+YX.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE4B9BA1F0B479700117E44 /* UIImage+YX.h */; };
+		DAE4B9BD1F0B479700117E44 /* UIImage+YX.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE4B9BB1F0B479700117E44 /* UIImage+YX.m */; };
+		DAE4B9C01F0B480E00117E44 /* UIImageView+YX.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE4B9BE1F0B480E00117E44 /* UIImageView+YX.h */; };
+		DAE4B9C11F0B480E00117E44 /* UIImageView+YX.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE4B9BF1F0B480E00117E44 /* UIImageView+YX.m */; };
+		DAE4B9C21F0B6E4B00117E44 /* UIImage+YX.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE4B9BA1F0B479700117E44 /* UIImage+YX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAE4B9C31F0B6E4B00117E44 /* UIImageView+YX.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE4B9BE1F0B480E00117E44 /* UIImageView+YX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAE4B9C41F0B6E4B00117E44 /* YXViewPagerScrollView.h in Headers */ = {isa = PBXBuildFile; fileRef = DAE4B9B61F0B43A400117E44 /* YXViewPagerScrollView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAE4B9C51F0B6E5F00117E44 /* UIImage+YX.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE4B9BB1F0B479700117E44 /* UIImage+YX.m */; };
+		DAE4B9C61F0B6E5F00117E44 /* UIImageView+YX.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE4B9BF1F0B480E00117E44 /* UIImageView+YX.m */; };
+		DAE4B9C71F0B6E5F00117E44 /* YXViewPagerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAE4B9B71F0B43A400117E44 /* YXViewPagerScrollView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,9 +71,8 @@
 /* Begin PBXFileReference section */
 		0132090ED3A392817E10DF94C4C056F5 /* UIView+YX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIView+YX.h"; sourceTree = "<group>"; };
 		053B72058698A83FBA4F89E8A7C53546 /* UIColor+YX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+YX.h"; sourceTree = "<group>"; };
-		0870C4844AF14507414589D893470C65 /* Pods-YXViewPager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-YXViewPager_Example.modulemap"; sourceTree = "<group>"; };
+		0870C4844AF14507414589D893470C65 /* Pods-YXViewPager_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-YXViewPager_Example.modulemap"; sourceTree = "<group>"; };
 		0AB2F09CFF721337472DD0069458E1E5 /* YXViewPager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YXViewPager-dummy.m"; sourceTree = "<group>"; };
-		0C3A295D383B9CB260B9E1B38B031A83 /* YXViewPagerItemViewModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YXViewPagerItemViewModel.m; sourceTree = "<group>"; };
 		11707FD1A43291B1E6CD0AB25D07F78B /* Pods-YXViewPager_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YXViewPager_Tests-resources.sh"; sourceTree = "<group>"; };
 		1586FBB54D36417B3C6E493E43086E4A /* Pods-YXViewPager_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YXViewPager_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		1CE3423B201909E4AFD6DEFFA9E0E18A /* YXViewPagerTopView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YXViewPagerTopView.m; sourceTree = "<group>"; };
@@ -66,20 +87,19 @@
 		6889C8B0765EC4FC91A7CDB1F2191216 /* YXViewPagerBaseViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YXViewPagerBaseViewController.m; sourceTree = "<group>"; };
 		6C2F8C93257EC9B012A49C38522AB6AF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70785FEA2678314168AB5E15C6950A86 /* Pods-YXViewPager_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YXViewPager_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		7315FB37CA756A9A0F06A990C216238E /* Pods_YXViewPager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YXViewPager_Tests.framework; path = "Pods-YXViewPager_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7315FB37CA756A9A0F06A990C216238E /* Pods_YXViewPager_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YXViewPager_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A5EEFE09AAAA8C17F3E694AAE784135 /* Pods-YXViewPager_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YXViewPager_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		7CFFA74FCB2C069D757EC01B2EEFEC49 /* YXViewPagerTopItemView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YXViewPagerTopItemView.m; sourceTree = "<group>"; };
 		8065F020806B28585E0920860887D762 /* YXViewPagerEventDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YXViewPagerEventDelegate.h; sourceTree = "<group>"; };
 		813EF23DA2FFBEC1F75F49EA4CCDC86B /* Pods-YXViewPager_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YXViewPager_Example-dummy.m"; sourceTree = "<group>"; };
-		84E7A676178A2A5B4CDE79C728A10424 /* YXViewPagerItemViewModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YXViewPagerItemViewModel.h; sourceTree = "<group>"; };
-		8DA0A9640DAFC701E0FF89A2718669D8 /* Pods_YXViewPager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_YXViewPager_Example.framework; path = "Pods-YXViewPager_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DA0A9640DAFC701E0FF89A2718669D8 /* Pods_YXViewPager_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YXViewPager_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F3F1F58E1DBC63AC3F8EC089BC6BA29 /* Pods-YXViewPager_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YXViewPager_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		8FEADCD3E2B97528ABE313EE31CD5CC0 /* YXViewPagerBaseSubViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = YXViewPagerBaseSubViewController.m; sourceTree = "<group>"; };
 		90F69835E5363E7484697055849AC34C /* Pods-YXViewPager_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YXViewPager_Example.release.xcconfig"; sourceTree = "<group>"; };
-		912E10BFB79D43E573DD6333C6228EF3 /* YXViewPager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = YXViewPager.modulemap; sourceTree = "<group>"; };
+		912E10BFB79D43E573DD6333C6228EF3 /* YXViewPager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = YXViewPager.modulemap; sourceTree = "<group>"; };
 		929E0D79823EF785E918426C93DA42FC /* YXViewPagerBaseSubViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YXViewPagerBaseSubViewController.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9878766EBFB5D7990C127E8197DF6730 /* YXViewPager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = YXViewPager.framework; path = YXViewPager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9878766EBFB5D7990C127E8197DF6730 /* YXViewPager.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YXViewPager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4BC3C7727317E3E9F8ED3013535EC0F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A4EB66EB161AA9E9D49C1B162B6E8790 /* Pods-YXViewPager_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YXViewPager_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A6899028E2EAF3719D1AE769EDFFE615 /* YXViewPager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YXViewPager-umbrella.h"; sourceTree = "<group>"; };
@@ -90,8 +110,21 @@
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D5C441E46CC34412EC33C3346AB5695E /* Pods-YXViewPager_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YXViewPager_Tests-dummy.m"; sourceTree = "<group>"; };
 		D5CDE47E90B25F50185692DA5971A7FB /* YXViewPagerTopItemView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YXViewPagerTopItemView.h; sourceTree = "<group>"; };
+		DAE4B9A21F0B3E3A00117E44 /* YXViewPagerSubVcScrollDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXViewPagerSubVcScrollDelegate.h; sourceTree = "<group>"; };
+		DAE4B9A51F0B3F7F00117E44 /* YXViewPagerItemViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXViewPagerItemViewModel.h; sourceTree = "<group>"; };
+		DAE4B9A61F0B3F7F00117E44 /* YXViewPagerItemViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXViewPagerItemViewModel.m; sourceTree = "<group>"; };
+		DAE4B9A71F0B3FEC00117E44 /* YXViewPagerConfigItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXViewPagerConfigItemModel.h; sourceTree = "<group>"; };
+		DAE4B9A81F0B3FEC00117E44 /* YXViewPagerConfigItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXViewPagerConfigItemModel.m; sourceTree = "<group>"; };
+		DAE4B9AB1F0B402C00117E44 /* YXViewPagerConfigModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXViewPagerConfigModel.h; sourceTree = "<group>"; };
+		DAE4B9AC1F0B402C00117E44 /* YXViewPagerConfigModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXViewPagerConfigModel.m; sourceTree = "<group>"; };
+		DAE4B9B61F0B43A400117E44 /* YXViewPagerScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXViewPagerScrollView.h; sourceTree = "<group>"; };
+		DAE4B9B71F0B43A400117E44 /* YXViewPagerScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXViewPagerScrollView.m; sourceTree = "<group>"; };
+		DAE4B9BA1F0B479700117E44 /* UIImage+YX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+YX.h"; sourceTree = "<group>"; };
+		DAE4B9BB1F0B479700117E44 /* UIImage+YX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+YX.m"; sourceTree = "<group>"; };
+		DAE4B9BE1F0B480E00117E44 /* UIImageView+YX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+YX.h"; sourceTree = "<group>"; };
+		DAE4B9BF1F0B480E00117E44 /* UIImageView+YX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+YX.m"; sourceTree = "<group>"; };
 		DB79E16154C87DA1A6F3E3B242056F2A /* YXViewPagerUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = YXViewPagerUtility.h; sourceTree = "<group>"; };
-		DBDDA6B6B765539111A734C294DBE8E6 /* Pods-YXViewPager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-YXViewPager_Tests.modulemap"; sourceTree = "<group>"; };
+		DBDDA6B6B765539111A734C294DBE8E6 /* Pods-YXViewPager_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-YXViewPager_Tests.modulemap"; sourceTree = "<group>"; };
 		E0F991801C79D1A9D53B0C34434C239A /* Pods-YXViewPager_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YXViewPager_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		EDF3BADCC84A531FF51A6AA38DDC4766 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F5E83849467E119EFBF32770B12FE475 /* UIView+YX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIView+YX.m"; sourceTree = "<group>"; };
@@ -144,12 +177,12 @@
 			isa = PBXGroup;
 			children = (
 				AE1B296B305678F4FEEF291050F84FB3 /* YXViewPager.h */,
+				DAE4B9A41F0B3F7F00117E44 /* Model */,
 				A4C32326E3EB859F4F7C70FAD394BE4F /* Delegate */,
 				EA062D4263ABE43BAE826A626E6F8F1D /* Utility */,
 				BC51C1FF7558123F2BE24E6F09693EA6 /* VC */,
 				1457733951487704DECDE3D1528FBC9F /* View */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -170,20 +203,10 @@
 				7CFFA74FCB2C069D757EC01B2EEFEC49 /* YXViewPagerTopItemView.m */,
 				C2AA3B80E0F9B42BE74D9F996DB68622 /* YXViewPagerTopView.h */,
 				1CE3423B201909E4AFD6DEFFA9E0E18A /* YXViewPagerTopView.m */,
-				26919F59B61E8E5367813BAFF5D4C739 /* ViewModel */,
+				DAE4B9B61F0B43A400117E44 /* YXViewPagerScrollView.h */,
+				DAE4B9B71F0B43A400117E44 /* YXViewPagerScrollView.m */,
 			);
-			name = View;
 			path = View;
-			sourceTree = "<group>";
-		};
-		26919F59B61E8E5367813BAFF5D4C739 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				84E7A676178A2A5B4CDE79C728A10424 /* YXViewPagerItemViewModel.h */,
-				0C3A295D383B9CB260B9E1B38B031A83 /* YXViewPagerItemViewModel.m */,
-			);
-			name = ViewModel;
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		4DF75A53FF2758C544EE936219E68B62 /* Development Pods */ = {
@@ -199,7 +222,6 @@
 			children = (
 				065DB7D2A0758DEB5D658A99E60285A1 /* Classes */,
 			);
-			name = YXViewPager;
 			path = YXViewPager;
 			sourceTree = "<group>";
 		};
@@ -226,8 +248,8 @@
 			isa = PBXGroup;
 			children = (
 				8065F020806B28585E0920860887D762 /* YXViewPagerEventDelegate.h */,
+				DAE4B9A21F0B3E3A00117E44 /* YXViewPagerSubVcScrollDelegate.h */,
 			);
-			name = Delegate;
 			path = Delegate;
 			sourceTree = "<group>";
 		};
@@ -275,7 +297,6 @@
 				BEEC6E9340B8BE2D78371C025ECFFE5C /* YXViewPagerBaseViewController.h */,
 				6889C8B0765EC4FC91A7CDB1F2191216 /* YXViewPagerBaseViewController.m */,
 			);
-			name = VC;
 			path = VC;
 			sourceTree = "<group>";
 		};
@@ -306,6 +327,19 @@
 			path = "Target Support Files/Pods-YXViewPager_Tests";
 			sourceTree = "<group>";
 		};
+		DAE4B9A41F0B3F7F00117E44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DAE4B9A51F0B3F7F00117E44 /* YXViewPagerItemViewModel.h */,
+				DAE4B9A61F0B3F7F00117E44 /* YXViewPagerItemViewModel.m */,
+				DAE4B9A71F0B3FEC00117E44 /* YXViewPagerConfigItemModel.h */,
+				DAE4B9A81F0B3FEC00117E44 /* YXViewPagerConfigItemModel.m */,
+				DAE4B9AB1F0B402C00117E44 /* YXViewPagerConfigModel.h */,
+				DAE4B9AC1F0B402C00117E44 /* YXViewPagerConfigModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		EA062D4263ABE43BAE826A626E6F8F1D /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,8 +349,11 @@
 				F5E83849467E119EFBF32770B12FE475 /* UIView+YX.m */,
 				2BE06E1A1434F6EF8211B690987ACBEA /* YXViewPagerDefine.h */,
 				DB79E16154C87DA1A6F3E3B242056F2A /* YXViewPagerUtility.h */,
+				DAE4B9BA1F0B479700117E44 /* UIImage+YX.h */,
+				DAE4B9BB1F0B479700117E44 /* UIImage+YX.m */,
+				DAE4B9BE1F0B480E00117E44 /* UIImageView+YX.h */,
+				DAE4B9BF1F0B480E00117E44 /* UIImageView+YX.m */,
 			);
-			name = Utility;
 			path = Utility;
 			sourceTree = "<group>";
 		};
@@ -335,6 +372,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE4B9AD1F0B402C00117E44 /* YXViewPagerConfigModel.h in Headers */,
+				DAE4B9BC1F0B479700117E44 /* UIImage+YX.h in Headers */,
+				DAE4B9C01F0B480E00117E44 /* UIImageView+YX.h in Headers */,
+				DAE4B9A91F0B3FEC00117E44 /* YXViewPagerConfigItemModel.h in Headers */,
+				DAE4B9B81F0B43A400117E44 /* YXViewPagerScrollView.h in Headers */,
+				DAE4B9A31F0B3E3A00117E44 /* YXViewPagerSubVcScrollDelegate.h in Headers */,
 				05816007B1424E5844F4B9725240D728 /* Pods-YXViewPager_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -351,10 +394,16 @@
 				07C43CC24308AE95ADC805417467251A /* YXViewPagerBaseViewController.h in Headers */,
 				CB8080E368724299AF9E8CE16EC191FC /* YXViewPagerDefine.h in Headers */,
 				C2A2D35A5B58089A38863EC8854CFE26 /* YXViewPagerEventDelegate.h in Headers */,
-				4BD31D0DCF58D984C9DD879522D8E417 /* YXViewPagerItemViewModel.h in Headers */,
 				3D20A68A4B484460A900C86FFCD36684 /* YXViewPagerTopItemView.h in Headers */,
 				22B239D83773226F5B6CADA4CB23309E /* YXViewPagerTopView.h in Headers */,
 				3CC3E42DC28A9E190CDD45CD7F5D9308 /* YXViewPagerUtility.h in Headers */,
+				DAE4B9AF1F0B413500117E44 /* YXViewPagerItemViewModel.h in Headers */,
+				DAE4B9B01F0B413500117E44 /* YXViewPagerConfigItemModel.h in Headers */,
+				DAE4B9B51F0B423800117E44 /* YXViewPagerSubVcScrollDelegate.h in Headers */,
+				DAE4B9C21F0B6E4B00117E44 /* UIImage+YX.h in Headers */,
+				DAE4B9C31F0B6E4B00117E44 /* UIImageView+YX.h in Headers */,
+				DAE4B9C41F0B6E4B00117E44 /* YXViewPagerScrollView.h in Headers */,
+				DAE4B9B11F0B413500117E44 /* YXViewPagerConfigModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,7 +495,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE4B9AE1F0B402C00117E44 /* YXViewPagerConfigModel.m in Sources */,
+				DAE4B9AA1F0B3FEC00117E44 /* YXViewPagerConfigItemModel.m in Sources */,
 				BEA903636149870F76B9FE8145CD3AC2 /* Pods-YXViewPager_Example-dummy.m in Sources */,
+				DAE4B9B91F0B43A400117E44 /* YXViewPagerScrollView.m in Sources */,
+				DAE4B9BD1F0B479700117E44 /* UIImage+YX.m in Sources */,
+				DAE4B9C11F0B480E00117E44 /* UIImageView+YX.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -462,12 +516,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAE4B9C51F0B6E5F00117E44 /* UIImage+YX.m in Sources */,
+				DAE4B9C61F0B6E5F00117E44 /* UIImageView+YX.m in Sources */,
+				DAE4B9C71F0B6E5F00117E44 /* YXViewPagerScrollView.m in Sources */,
+				DAE4B9B21F0B414A00117E44 /* YXViewPagerItemViewModel.m in Sources */,
+				DAE4B9B31F0B414A00117E44 /* YXViewPagerConfigItemModel.m in Sources */,
+				DAE4B9B41F0B414A00117E44 /* YXViewPagerConfigModel.m in Sources */,
 				62DB9056666298243EE0898AB81650D1 /* UIColor+YX.m in Sources */,
 				7CC3E3E432568C7F8A8C3363A957CFFC /* UIView+YX.m in Sources */,
 				9128AAA67D23E3D6F7FC93734B0C6838 /* YXViewPager-dummy.m in Sources */,
 				8B2504EC7146FE280CD7B85181F11815 /* YXViewPagerBaseSubViewController.m in Sources */,
 				1216566DEAE0E9B44BB977D17C2C1949 /* YXViewPagerBaseViewController.m in Sources */,
-				644485C7D8467202BE072F09FD2E62A6 /* YXViewPagerItemViewModel.m in Sources */,
 				687B56C2C6FA124CD2B7A3755DA0D677 /* YXViewPagerTopItemView.m in Sources */,
 				1C1C82D091B4D2E4A843D2DE6B490D4A /* YXViewPagerTopView.m in Sources */,
 			);

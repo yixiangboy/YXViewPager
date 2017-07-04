@@ -14,6 +14,7 @@
 #import "YXViewPagerDemo5ViewController.h"
 #import "YXViewPagerDemo6ViewController.h"
 #import "YXViewPagerDemo7ViewController.h"
+#import "YXViewPagerDemo8ViewController.h"
 
 @interface YXViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -33,7 +34,7 @@
 }
 
 -(void)initData{
-    _items = @[@"图片+文字",@"只有文字",@"只有图片",@"图片+文字选中切换",@"超过一屏",@"rootVC与subVC通信",@"生命周期探索"];
+    _items = @[@"图片+文字",@"只有文字",@"只有图片",@"图片+文字选中切换",@"超过一屏",@"rootVC与subVC通信",@"生命周期探索",@"周边好去处"];
 }
 
 -(void)initTableView{
@@ -76,6 +77,8 @@
         vc = [[YXViewPagerDemo6ViewController alloc] init];
     }else if(row==6){
         vc = [[YXViewPagerDemo7ViewController alloc] init];
+    }else if(row==7){
+        vc = [[YXViewPagerDemo8ViewController alloc] init];
     }
     [self.navigationController pushViewController:vc animated:YES];
 }
